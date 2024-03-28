@@ -44,7 +44,7 @@ export default function Read() {
 
 // if notelist is empty, returning a message and a create button.
 
-    if (noteData.length == 0) {
+    if (noteData.length === 0) {
         return (
             <div>
             <div className="empty-list">Notelist empty.<br></br>

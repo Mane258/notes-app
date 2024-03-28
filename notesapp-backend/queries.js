@@ -1,12 +1,14 @@
+require('dotenv').config()
+
 // database info
 
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: 'appuser',
-  host: 'localhost',
-  database: 'app',
-  password: 'appuser',
-  port: 5432,
+  user: process.env.POSTGRES_USER,
+  host: process.env.POSTGRES_HOST,
+  database: process.env.POSTGRES_DB,
+  password: process.env.POSTGRES_PASSWORD,
+  port: process.env.POSTGRES_PORT,
 })
 
 // database query for getting all notes
