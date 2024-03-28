@@ -30,11 +30,14 @@ Build for creating, reading, updating and deleting notes.
 
 4. Start the application
    ```
-   notesapp-backend
+   cd notesapp-backend
+   ```
    ```
    node index.js
    ```
-   notesapp-frontend
+   ```
+   cd notesapp-frontend
+   ```
    ```
    npm run start
    ```
